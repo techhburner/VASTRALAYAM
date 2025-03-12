@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VASTRALAYAM</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+       <a href="home.html"><img src="Image/VASTRALAYAM_logo.jpeg" height="180px" width="180px" alt="logo"></a>
+        <h2 class="header">VASTRALAYAM</h2>
+    </header>
+    <nav style="padding-top: 5px;" id="nav_menu">
+        <ul>
+            <li><a href="home.html">Home</a></li> 
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+                          
+        </ul>
+    </nav>
+    <main>
+        <h1>VASTRALAYAM</h1>
+        <section>
+            <h2 style="color: #a10b5e;">Welcome to Our VASTRALAYAM </h2>
+            <p>We are dedicated to providing the best services to our clients.</p>
+        </section>
+        <p>
+            At VASTRALAYAM, we celebrate the grace and beauty of women through our exclusive boutique collections. Specializing in sarees and intricate blouse designs, we bring you timeless elegance blended with modern craftsmanship. 
+
+            Our boutique is dedicated to enhancing the charm of every saree with expert fall stitching, beautifully designed tassels, and custom blouse tailoring that complements your unique style. We take pride in our meticulous attention to detail and commitment to quality, ensuring that each piece reflects sophistication and finesse.
+            
+            Whether you're preparing for a special occasion or refining your everyday elegance, VASTRALAYAM is here to make your fashion journey seamless and stylish. Step into a world where tradition meets trend, and let us help you express your individuality with grace and confidence.
+        </p>
+        <h3>Life's Too Short for Boring Clothes!!!</h3>
+    </main>
+    <footer>
+        
+        <p>&copy; 2025 VASTRALAYAM HYD . All Rights Reserved.</p>
+    </footer>
+    <!-- Back to Top button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- JavaScript for "Back to Top" functionality -->
+    <script>
+        // Show the "Back to Top" button when the user scrolls down
+        window.onscroll = function() {
+            const backToTopButton = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Smoothly scroll to the top of the page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

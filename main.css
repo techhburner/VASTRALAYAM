@@ -1,0 +1,156 @@
+/* Elegant Boutique Website CSS */
+
+/* Importing stylish Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+html {
+    background-color: #fdf8f4;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf8f4;
+    color: #5a4d4d;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Elegant Header Styling */
+header {
+    background: linear-gradient(45deg, #e0c3a5, #fdf8f4, #a67c52);
+    border-bottom: 4px solid #b68d6a;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h2 {
+    font-size: 2rem;
+    color: #8b6f5e;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Styling */
+#nav_menu ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: #a67c52;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#nav_menu ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#nav_menu ul li a:hover {
+    background: #e0c3a5;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+}
+
+section h1 {
+    font-size: 2rem;
+    color: #b68d6a;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #5a4d4d;
+}
+
+/* Form Styling */
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #b68d6a;
+    border-radius: 10px;
+    background: white;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #b68d6a;
+    border-radius: 6px;
+}
+
+.submit {
+    background: #b68d6a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit:hover {
+    background: #a67c52;
+}
+
+/* Image Gallery */
+.image-gallery img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Slideshow */
+.slides img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #a67c52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #b68d6a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#backToTop:hover {
+    background: #a67c52;
+}

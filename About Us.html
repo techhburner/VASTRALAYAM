@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us | VASTRALAYAM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+		<a href="home.html"><img src="Image/VASTRALAYAM_logo.jpeg" height="180px" width="180px" alt="logo"></a>
+        <h2 class="header">VASTRALAYAM</h2>
+    </header>
+    <nav style="padding-top: 5px;" id="nav_menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            
+            <li><a href="Contact Us.html">Contact us</a></li>
+                     
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Our Stitching Services</h1>
+            <p>At Fashion Boutique, we specialize in providing expert stitching services for traditional and modern outfits. Our services include:</p>
+            
+            <h2>Fall Stitching</h2>
+            <p>We ensure that your sarees have the perfect fall stitched to enhance their drape and elegance.</p>
+            
+            <h2>Varieties of Tassels</h2>
+            <p>We offer a wide range of tassel designs that add a stylish and trendy look to your outfits.</p>
+            
+            <h2>Blouse Designs</h2>
+            <p>From classic to modern blouse designs, we provide customized stitching to ensure the perfect fit and style for every occasion.</p>
+            
+            <div style="display: flex; gap: 20px;">
+                <img src="Image/Saree_Tassels_Collection.jpeg" width="150px" height="200px" alt="fashion_1"> 
+                <img src="Image/elegant_saree_border.jpg" width="150px" height="200px" alt="fashion_2">
+                <img src="Image/Stitched_Blouse.jpg" width="150px" height="200px" alt="fashion_3">
+				<img src="Image/Saree_Arrangement.jpg" width="150px" height="200px" alt="fashion_3">
+            </div>
+        </section>
+        
+        <div class="image-gallery">
+            <h2 style="background-color: #e0c3a5;">VASTRALAYAM</h2>
+            <div class="slides">
+                <img id="galleryImage" src="Fashion/Hollywood_Fashion.jpg" alt="Fashion Image" width="300px" height="200px">
+            
+    </main>
+    <footer>
+        <p>&copy; 2025 VASTRALAYAM. All Rights Reserved.</p>
+    </footer>
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <script>
+        let images = [
+            "Fashion/Hollywood_Fashion.jpg",
+            "Fashion/Man_Fashion.jpg",
+            "Fashion/Modern_Fashion.jpg"
+        ];
+        let currentIndex = 0;
+
+        function showImage(index) {
+            document.getElementById("galleryImage").src = images[index];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+            showImage(currentIndex);
+        }
+    </script>
+</body>
+</html>
